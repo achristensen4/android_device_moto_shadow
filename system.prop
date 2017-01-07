@@ -9,7 +9,7 @@ ro.default_usb_mode=4
 ro.usb.use_custom_service=1
 
 #Use 1% battery increments
-ro.product.use_charge_counter=1
+ro.product.use_charge_counter=0
 
 # BEGIN Motorola, a18772, 05/19/2010, IKSHADOW-5584
 # Add 411 to DAN List for VZW.
@@ -39,12 +39,12 @@ ro.cdma.home.operator.alpha=Verizon
 ro.config.vc_call_vol_steps=7
 
 # wlan interface
-wifi.interface = tiwlan0
+wifi.interface = wlan0
 
 # Time between scans in seconds. Keep it high to minimize battery drain.
 # This only affects the case in which there are remembered access points,
 # but none are in range.
-wifi.supplicant_scan_interval = 90
+wifi.supplicant_scan_interval = 16
 
 # Indicate carrier OTA SP number schema
 # refer to frameworks/base/telephony/java/com/android/
@@ -117,7 +117,7 @@ persist.mot.usb.mediasync = 0
 # END Motorola, a21951, 17-Apr-2010, IKSHADOW-3602
 
 #Proximity sensor debounce time
-mot.proximity.delay=450
+mot.proximity.delay=0
 # disable touch below 60 pixels
 mot.proximity.distance=60
 
@@ -127,7 +127,7 @@ mot.proximity.distance=60
 # false Horizontal BUA is not preloaded
 ro.HorizontalBUA=true
 #Proximity sensor debounce time
-mot.proximity.delay=450
+mot.proximity.delay=0
 mot.proximity.distance=60
 
 # BEGIN Motorola, pkd348, 26-Apr-2010,	ISHADOW-4035
